@@ -2,7 +2,7 @@
 
 namespace EntertainmentChatApi.Services
 {
-    public class AzureSqlDbService : IAzureSqlDbService
+    public class AzureSqlDbService(string connectionString) : IAzureSqlDbService
     {
     }
 }
