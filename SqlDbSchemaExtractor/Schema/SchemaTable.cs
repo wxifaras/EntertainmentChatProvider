@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace SqlDbSchemaExtractor.Schema;
+
 public sealed class SchemaTable
 {
     public SchemaTable(
