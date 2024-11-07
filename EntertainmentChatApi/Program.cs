@@ -2,6 +2,7 @@ using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel;
 using EntertainmentChatApi.Interfaces;
 using EntertainmentChatApi.Services;
+using EntertainmentChatApi.Prompts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,15 @@ builder.Services.AddTransient<Kernel>(s =>
 
 builder.Services.AddSingleton<IChatCompletionService>(sp =>
                      sp.GetRequiredService<Kernel>().GetRequiredService<IChatCompletionService>());
+
+builder.Services.AddSingleton<IChatHistoryManager>(sp =>
+{
+    string systemmsg = CorePrompts.GetSystemPrompt();
+    return new ChatHistoryManager(systemmsg);
+});
+
+builder.Services.AddHostedService<ChatHistoryCleanupService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
