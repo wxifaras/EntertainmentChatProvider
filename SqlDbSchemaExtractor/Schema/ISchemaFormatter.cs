@@ -3,7 +3,7 @@
 using System.IO;
 using System.Threading.Tasks;
 
-namespace SemanticKernel.Data.Nl2Sql.Library.Schema;
+namespace SqlDbSchemaExtractor.Schema;
 
 public interface ISchemaFormatter
 {

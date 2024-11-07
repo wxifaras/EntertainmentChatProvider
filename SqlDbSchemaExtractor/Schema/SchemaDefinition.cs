@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SemanticKernel.Data.Nl2Sql.Library.Schema;
+namespace SqlDbSchemaExtractor.Schema;
 
 public sealed class SchemaDefinition
 {

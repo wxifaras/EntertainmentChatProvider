@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SemanticKernel.Data.Nl2Sql.Library.Schema;
+namespace SqlDbSchemaExtractor.Schema;
 
 /// <summary>
 /// Format a <see cref="SchemaDefinition"/> object in YAML format.

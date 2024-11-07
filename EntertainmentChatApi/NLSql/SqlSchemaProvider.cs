@@ -3,7 +3,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
-using SemanticKernel.Data.Nl2Sql.Library.Schema;
+using SqlDbSchemaExtractor.Schema;
 
 internal sealed class SqlSchemaProvider
 {

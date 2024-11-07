@@ -4,8 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace SemanticKernel.Data.Nl2Sql.Library.Schema;
-
+namespace SqlDbSchemaExtractor.Schema;
 public sealed class SchemaTable
 {
     public SchemaTable(

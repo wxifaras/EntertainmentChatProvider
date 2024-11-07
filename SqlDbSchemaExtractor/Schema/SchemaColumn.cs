@@ -2,8 +2,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace SemanticKernel.Data.Nl2Sql.Library.Schema;
-
+namespace SqlDbSchemaExtractor.Schema;
 public sealed class SchemaColumn
 {
     public SchemaColumn(

@@ -7,7 +7,7 @@ using EntertainmentChatApi.Services;
 using Microsoft.SemanticKernel.ChatCompletion;
 using EntertainmentChatApi.Interfaces;
 using EntertainmentChatApi.Plugins;
-using SemanticKernel.Data.Nl2Sql.Harness;
+using SqlDbSchemaExtractor.Schema;
 using EntertainmentChatApi.Prompts;
 
 namespace EntertainmentChatApi.Controllers
