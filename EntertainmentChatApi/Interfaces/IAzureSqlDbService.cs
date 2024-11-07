@@ -2,5 +2,6 @@
 {
     public interface IAzureSqlDbService
     {
+        Task<string> GetDbResults(string query);
     }
 }

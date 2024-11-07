@@ -10,7 +10,8 @@ namespace EntertainmentChatApi.Plugins
         [Description("Executes a SQL query to get entertainment data. Attempt to query name column if not enough information in prompt.")]
         public async Task<string> GetEntertainmentData(string query)
         {
-            throw new NotImplementedException();
+            var dbResults = await azureDbService.GetDbResults(query);
+            return dbResults;
         }
     }
 }
