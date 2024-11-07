@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
+using Microsoft.Data.SqlClient;
 using System.Data.Common;
-using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 namespace SqlDbSchemaExtractor.Schema;
 

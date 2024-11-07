@@ -1,8 +1,12 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
+using System;
+using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Globalization;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 using SqlDbSchemaExtractor.Schema;
 
 internal sealed class SqlSchemaProvider
