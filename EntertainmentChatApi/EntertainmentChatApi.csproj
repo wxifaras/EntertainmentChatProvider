@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\nl2sql.library\Nl2Sql.Library.csproj" />
+    <ProjectReference Include="..\SqlDbSchemaExtractor\SqlDbSchemaExtractor.csproj" />
   </ItemGroup>
 
 </Project>

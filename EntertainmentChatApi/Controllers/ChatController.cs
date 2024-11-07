@@ -44,7 +44,7 @@ namespace EntertainmentChatApi.Controllers
             _tables = configuration.GetValue<string>("Tables") ?? throw new ArgumentNullException("Tables");
         }
 
-        [HttpPost("chat")]
+        [HttpPost()]
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -70,12 +70,10 @@ namespace EntertainmentChatApi.Controllers
                 var sessionId = chatRequest.SessionId;
                 var chatHistory = _chatHistoryManager.GetOrCreateChatHistory(sessionId);
 
-
                 _kernel.ImportPluginFromObject(new DBQueryPlugin(_azureDbService));
 
                 var jsonSchema = await GetDatabaseSchemaAsync();
 
-                chatHistory.AddUserMessage(string.Empty); // TODO: Provide Example
                 chatHistory.AddUserMessage(NLPSqlPluginPrompts.GetNLPToSQLSystemPrompt(jsonSchema));
                 chatHistory.AddUserMessage(chatRequest.Prompt);
 

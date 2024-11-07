@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>SemanticKernel.Data.Nl2Sql.Library</RootNamespace>
-        <AssemblyName>nl2sql.library</AssemblyName>
+        <RootNamespace>SqlDbSchemaExtractor</RootNamespace>
+        <AssemblyName>SqlDbSchemaExtractor</AssemblyName>
         <TargetFramework>net8.0</TargetFramework>
         <RollForward>LatestMajor</RollForward>
         <ImplicitUsings>disable</ImplicitUsings>
@@ -13,13 +13,15 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
-        <PackageReference Include="Microsoft.SemanticKernel" Version="1.15.1" />
-        <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.16.0" />
         <PackageReference Include="System.Linq.Async" Version="6.0.1" />
     </ItemGroup>
 
     <ItemGroup>
         <InternalsVisibleTo Include="nl2sql.harness" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Internal\" />
     </ItemGroup>
 
 </Project>
