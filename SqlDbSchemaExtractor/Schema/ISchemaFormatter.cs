@@ -1,6 +1,4 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
-
-using System.IO;
+﻿using System.IO;
 using System.Threading.Tasks;
 
 namespace SqlDbSchemaExtractor.Schema;

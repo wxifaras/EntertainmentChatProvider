@@ -1,5 +1,4 @@
-﻿// Copyright (c) Microsoft. All rights reserved.
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System.Data.Common;
 using System.Threading.Tasks;
 
